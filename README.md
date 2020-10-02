@@ -56,12 +56,12 @@ The script should now appear in the Plugins Dropdown menu.
 
 Upon launching, the script will ask for the following inputs:
 
-- **File Type** - Specify input image file type (.tif .jpg etc.)*.
-- **Tensor** - Minimum structure tensor - Passed to OrientationJ
+- **File Type** - Specify input image file type (.tif .jpg etc.)*
+- **Tensor** - Minimum structure tensor - Passed to `OrientationJ`
 - **Image pre-processing** (Enable/Disable) - Select image pre-processing options.
-- **Advanced Options** (Enable/Disable) - Opens Advanced Options control panel for user input.
--**Enable Batch Mode** (Enable/Disable) - Runs the script silently (_faster_).
--**Launch Memory Monitor** (Enable/Disable) - Mainly for debugging.
+- **Advanced Options** (Enable/Disable) - Opens Advanced Options control panel for user input  
+-**Enable Batch Mode** (Enable/Disable) - Runs the script silently (_faster_)  
+-**Launch Memory Monitor** (Enable/Disable) - Mainly for debugging
 
 _*Output colour overlay files are saved in .png format._  
 _Avoid using input files in the .png format where possible._
@@ -71,20 +71,20 @@ _Avoid using input files in the .png format where possible._
 
 - **8-bit Conversion** - Converts each image to 8-bit
 - **Brightness Threshold** - Minimum brightness threshold
-- **Sharpen** (Enable/Disable) - Runs the ImageJ/FIJI sharpen command
-- **Despeckle** (Enable/Disable) - Runs the ImageJ/FIJI despeckle command
-- **Auto Enhance Output Image** (Enable/Disable) - Enhance Brightness/Contrast of **_Output_** images only (_does NOT affect analysis_)
+- **Sharpen** (Enable/Disable) - Runs the ImageJ/FIJI sharpen command prior to analysis  
+- **Despeckle** (Enable/Disable) - Runs the ImageJ/FIJI despeckle command prior to analysis  
+- **Auto Enhance Output Image** (Enable/Disable) - Enhance Brightness/Contrast of **_Output_** images only (_does NOT affect analysis - aesthetics only_)
 
 ---
 ### Advanced variables specified by the user (_if enabled_) include:
-If enabled in the Basic Parameter window, the script will launch an input window, allowing for customisation of analysis parameters which are passed directly to the OrientationJ plugin:
+If enabled in the Basic Parameter window, the script will also launch an input window allowing for customisation of analysis parameters which are passed directly to the `OrientationJ` plugin:
 
 - **Gradient** - Gradient used (0: Cubic Spline, 1: Finite difference, 2: Fourier; 3: Riesz, 4: Gaussian)
 - **Min Coherency** - Minimum Coherency - The ratio between the difference and the sum of the tensor eigenvalues
 - **Min Energy** - Minimum Energy value - The energy parameter is the trace of the tensor matrix
 
 ---
-_**Once basic and advanced options have been chosen, you will be asked to specify the input directory containing the image files to be analysed.**_  
+_**Once basic and advanced options have been chosen, you will be asked to specify the top level input directory containing the image files to be analysed.**_  
 
 ---
 ### Output Image files
