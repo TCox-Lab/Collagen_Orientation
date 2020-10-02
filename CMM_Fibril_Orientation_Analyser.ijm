@@ -49,7 +49,7 @@ MemMon = 0; // Launch memory monitor (debugging)
 Bat = 0; // Batch mode setting for silent processing
 
 // Create Dialog window to accept user inputs
-Dialog.create("CMM Lab Orientation Analyser Settings");
+Dialog.create("CMM Lab Orientation Analyser "+ver+" Settings");
 Dialog.addString("Specify File Type", FiTy);
 Dialog.addNumber("Tensor:", ImTen);
 Dialog.addCheckbox("Image Pre-Processing", true);
