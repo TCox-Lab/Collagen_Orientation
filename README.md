@@ -60,8 +60,8 @@ Upon launching, the script will ask for the following inputs:
 - **Tensor** - Minimum structure tensor - Passed to `OrientationJ`
 - **Image pre-processing** (Enable/Disable) - Select image pre-processing options.
 - **Advanced Options** (Enable/Disable) - Opens Advanced Options control panel for user input  
--**Enable Batch Mode** (Enable/Disable) - Runs the script silently (_faster_)  
--**Launch Memory Monitor** (Enable/Disable) - Mainly for debugging
+- **Enable Batch Mode** (Enable/Disable) - Runs the script silently (_faster_)  
+- **Launch Memory Monitor** (Enable/Disable) - Mainly for debugging
 
 _*Output colour overlay files are saved in .png format._  
 _Avoid using input files in the .png format where possible._
@@ -88,9 +88,9 @@ _**Once basic and advanced options have been chosen, you will be asked to specif
 
 ---
 ### Output Image files
-The script will output colour survey overlays (in `.png` format) of each of the analysed images, in the originating directory.  
+1. The script will output colour survey overlays (in `.png` format) of each of the analysed images, in the originating directory.  
 
-It will also output a saved version of the pre-processed image file in `.png` format in the originating directory.
+2. It will also output a saved version of the pre-processed image file in `.png` format in the originating directory.
 
 (_The original image always remains unchanged_)
 
